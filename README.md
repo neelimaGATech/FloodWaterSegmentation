@@ -8,22 +8,22 @@ Sen1Floods11 dataset consists of several types of files organized into folders f
    - Sentinel-1 SAR imagery:
      - GeoTIFF (.tif) with resolution 512 × 512 pixels at 10 m spatial resolution
      - VV and VH (log-scaled backscatter in dB)
-     - /features/s1/ folder
+     - Folder location: /features/s1/ 
      - File naming format: s1_{event_id}_{chip_id}_VV.tif, ..._VH.tif
    - Sentinel-2 Multispectral imagery
      - GeoTIFF (.tif)
      - 13 bands (B01–B12, including B8A)
-     - /features/s2/ folder
+     - Folder location: /features/s2/ 
      - File name format: s2_{event_id}_{chip_id}_{band}.tif
 2. Labels (Flood / Water Masks)
    - Hand Labeled Masks
      - GeoTIFF (.tif)
-     - /labels/hand_labeled/
+     - Folder location: /labels/hand_labeled/
      - Label Values: 1 (water), 0 (no water), -1 (no data)
      - File format: hand_{event_id}_{chip_id}.tif
    - Automatically Labeled Masks (weak supervision)
      - GeoTIFF (.tif)
-     - /labels/weak_labels/
+     - Folder location: /labels/weak_labels/
      - File name format: weak_{event_id}_{chip_id}.tif
 4. Data Splits
    - CSV files listing the event and chip IDs used in training, validation, and testing
